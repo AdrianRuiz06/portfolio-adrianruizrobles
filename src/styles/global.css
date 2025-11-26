@@ -493,3 +493,81 @@ html, body {
     text-align: center;
   }
 }
+/* ============== ABOUT SECTION ============== */
+.about-section {
+  width: 85%;
+  margin: 80px auto;
+  padding: 40px;
+  background: #161616;
+  border-radius: 20px;
+  border: 1px solid #222;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.about-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #9a4dff;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* FOTO */
+.about-image img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #9a4dff;
+  box-shadow: 0 0 20px rgba(154, 77, 255, 0.4);
+}
+
+/* TEXTO */
+.about-text {
+  max-width: 650px;
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: #ddd;
+}
+
+.about-text .resaltar {
+  color: #b26bff;
+  font-weight: 600;
+}
+
+/* ============== RESPONSIVE ============== */
+
+/* Tablets */
+@media (max-width: 900px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    font-size: 1.1rem;
+  }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+  .about-image img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+}

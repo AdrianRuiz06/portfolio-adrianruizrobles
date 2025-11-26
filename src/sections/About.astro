@@ -1,45 +1,41 @@
 ---
 import "../styles/global.css";
-const img = `${import.meta.env.BASE_URL}profile.jpeg`;
+import profilePic from "/profile.jpeg"; // si la imagen está en public/
 ---
 
 <section id="about" class="about-section">
+  <h2 class="about-title">Conóceme un poco más</h2>
 
-  <h2 class="about-title">Conóceme un poco más...</h2>
-
-  <div class="about-wrapper">
+  <div class="about-content">
     
     <!-- FOTO -->
-    <div class="about-photo-container">
-      <img src={img} alt="Adrián Ruiz" class="about-photo" />
+    <div class="about-image">
+      <img src={`${import.meta.env.BASE_URL}profile.jpeg`} alt="Adrián Ruiz" />
     </div>
 
     <!-- TEXTO -->
     <div class="about-text">
       <p>
-        ¡Hola! Soy <span class="key">Adrián Ruiz Robles</span>, un apasionado 
-        <span class="key">Desarrollador Web</span> con muchas ganas de seguir 
-        creciendo y construir cosas que realmente marquen la diferencia. 
-        Me encanta aprender nuevas tecnologías y transformar ideas en 
-        experiencias digitales <span class="key">rápidas</span>, 
-        <span class="key">modernas</span> y <span class="key">atractivas</span>.
+        ¡Hola! Soy <span class="resaltar">Adrián Ruiz Robles</span>, un 
+        <span class="resaltar">desarrollador web</span> en constante aprendizaje. 
+        Me apasiona crear interfaces limpias, modernas y funcionales.
       </p>
 
       <p>
-        Me considero una persona <span class="key">constante</span>, 
-        <span class="key">responsable</span> y con una mentalidad enfocada 
-        en mejorar cada día. Disfruto especialmente del proceso de construir 
-        componentes limpios, interfaces bien estructuradas y diseños que 
-        transmitan profesionalidad.
+        Actualmente estoy centrado en mejorar mis habilidades con 
+        <span class="resaltar">HTML</span>, 
+        <span class="resaltar">CSS</span>, 
+        <span class="resaltar">JavaScript</span> y 
+        <span class="resaltar">Astro</span>, buscando siempre nuevas formas de 
+        ofrecer experiencias digitales rápidas y atractivas.
       </p>
 
       <p>
-        Mi objetivo es crecer como <span class="key">Frontend Developer</span> 
-        y formar parte de proyectos donde pueda aportar mis conocimientos, 
-        aprender de otros profesionales y seguir desarrollando mi potencial.
+        Me considero una persona <span class="resaltar">proactiva</span>, 
+        <span class="resaltar">organizada</span> y con muchas ganas de seguir creciendo 
+        tanto profesional como personalmente.  
       </p>
     </div>
 
   </div>
-
 </section>
