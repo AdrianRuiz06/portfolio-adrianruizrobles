@@ -6,63 +6,72 @@ import "../styles/global.css";
 
   <!-- 🖼️ SLIDER DE FONDO -->
   <div class="hero-slider">
-    <div class="slide" style="background-image: url('/src/assets/bg1.webp')"></div>
-      <div class="slide" style="background-image: url('/src/assets/bg2.webp')"></div>
-    <div class="slide" style="background-image: url('/src/assets/bg3.webp')"></div>
+    <div class="slide" style={`background-image: url(${import.meta.env.BASE_URL}bg1.webp)`}></div>
+    <div class="slide" style={`background-image: url(${import.meta.env.BASE_URL}bg2.webp)`}></div>
+    <div class="slide" style={`background-image: url(${import.meta.env.BASE_URL}bg3.webp)`}></div>
   </div>
+
   <!-- 🌑 CAPA OSCURA -->
   <div class="hero-overlay"></div>
 
   <!-- ⭐ CONTENIDO CENTRAL -->
   <div class="hero-content">
-   <div class="hero-card">
-    <h1 class="hero-title">
-        Hola soy <span>Adrián Ruiz</span><br>
+    <div class="hero-card">
+
+      <h1 class="hero-title">
+        Hola soy <span>Adrián Ruiz</span><br />
         Web Developer
-    </h1>
+      </h1>
 
-    <p class="hero-subtitle">
-      Apasionado por crear experiencias digitales modernas, rápidas y atractivas.
-    </p>
+      <p class="hero-subtitle">
+        Apasionado por crear experiencias digitales modernas, rápidas y atractivas.
+      </p>
 
-     <div class="hero-buttons">
+      <div class="hero-buttons">
 
-  <!-- 🔵 PRIMERA LÍNEA — REDES SOCIALES -->
-  <div class="buttons-row">
-    <a href="www.linkedin.com/in/adrian-ruiz-robles" class="btn btn-social linkedin">
-      <img src="/public/iconosHero/logo-linkedln.webp" class="btn-icon" />
-      LinkedIn
-    </a>
+        <!-- 🔵 PRIMERA FILA -->
+        <div class="buttons-row">
 
-    <a href="https://github.com/AdrianRuiz06" class="btn btn-social github">
-      <img src="/public/iconosHero/logo-github.webp" class="btn-icon" />
-      GitHub
-    </a>
+          <a href="https://www.linkedin.com/in/adrian-ruiz-robles" class="btn btn-social linkedin">
+            <img src={`${import.meta.env.BASE_URL}iconosHero/logo-linkedin.webp`} class="btn-icon" alt="LinkedIn" />
+            LinkedIn
+          </a>
 
-    <a href="https://tinyurl.com/infojobs-AdrianRuiz" class="btn btn-social infojobs">
-      <img src="/public/iconosHero/logo-infojobs.jpg" class="btn-icon" />
-      InfoJobs
-    </a>
-  </div>
+          <a href="https://github.com/AdrianRuiz06" class="btn btn-social github">
+            <img src={`${import.meta.env.BASE_URL}iconosHero/logo-github.webp`} class="btn-icon" alt="GitHub" />
+            GitHub
+          </a>
 
-  <!-- 🟣 SEGUNDA LÍNEA — DESCARGAR CV -->
-  <div class="buttons-cv">
-    <a href="/CV-AdrianRuizRobles.pdf" download class="btn btn-outline cv">
-     <img src="/iconosHero/logo-cv.webp" class="btn-icon" alt="CV" />
-     Descargar CV
-    </a>
+          <a href="https://tinyurl.com/infojobs-AdrianRuiz" class="btn btn-social infojobs">
+            <img src={`${import.meta.env.BASE_URL}iconosHero/logo-infojobs.jpg`} class="btn-icon" alt="InfoJobs" />
+            InfoJobs
+          </a>
+
+        </div>
+
+        <!-- 🟣 SEGUNDA FILA -->
+        <div class="buttons-cv">
+          <a href={`${import.meta.env.BASE_URL}CV-AdrianRuizRobles.pdf`} download class="btn btn-outline cv">
+            <img src={`${import.meta.env.BASE_URL}iconosHero/logo-cv.webp`} class="btn-icon" alt="CV" />
+            Descargar CV
+          </a>
+        </div>
+
+      </div>
+
+      <!-- 🔽 FLECHA -->
+      <a id="scrollMore" class="scroll-down">
+        Conóceme más<br />
+        <span class="arrow">↓</span>
+      </a>
+
+
+    </div>
   </div>
 
 </div>
 
-
-<!-- 🔽 FLECHA ANIMADA (fuera del contenedor de botones) -->
-<a id="scrollMore" class="scroll-down">
-  Conóceme más<br>
-  <span class="arrow">↓</span>
-</a>
-
-<!-- 🧠 SCRIPT PARA SCROLL -->
+<!-- 🧠 SCROLL SCRIPT -->
 <script>
   const btn = document.getElementById("scrollMore");
   const section = document.querySelector("#about");
