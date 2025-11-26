@@ -41,3 +41,17 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+------------ MANUAL ---------------
+
+1. Actualizar el proyecto local
+    Antes de empezar cada día:'git pull origin main'
+    Así te aseguras de que tu carpeta local está sincronizada con GitHub.
+
+2. Guardar y subir cambios
+
+Cada vez que hagas nuevas modificaciones:
+    git add .
+    git commit -m "Descripción breve de los cambios"
+    git push
+Y con eso, todo queda guardado en GitHub 🚀
