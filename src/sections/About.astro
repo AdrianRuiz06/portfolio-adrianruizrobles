@@ -1,7 +1,45 @@
-<section id="about" class="section">
-  <h2>Sobre mí</h2>
-  <p>
-    Soy un desarrollador web en formación, apasionado por crear experiencias digitales modernas y atractivas.
-    Me encanta construir proyectos que mejoren mis habilidades.
-  </p>
+---
+import "../styles/global.css";
+const img = `${import.meta.env.BASE_URL}profile.jpeg`;
+---
+
+<section id="about" class="about-section">
+
+  <h2 class="about-title">Conóceme un poco más...</h2>
+
+  <div class="about-wrapper">
+    
+    <!-- FOTO -->
+    <div class="about-photo-container">
+      <img src={img} alt="Adrián Ruiz" class="about-photo" />
+    </div>
+
+    <!-- TEXTO -->
+    <div class="about-text">
+      <p>
+        ¡Hola! Soy <span class="key">Adrián Ruiz Robles</span>, un apasionado 
+        <span class="key">Desarrollador Web</span> con muchas ganas de seguir 
+        creciendo y construir cosas que realmente marquen la diferencia. 
+        Me encanta aprender nuevas tecnologías y transformar ideas en 
+        experiencias digitales <span class="key">rápidas</span>, 
+        <span class="key">modernas</span> y <span class="key">atractivas</span>.
+      </p>
+
+      <p>
+        Me considero una persona <span class="key">constante</span>, 
+        <span class="key">responsable</span> y con una mentalidad enfocada 
+        en mejorar cada día. Disfruto especialmente del proceso de construir 
+        componentes limpios, interfaces bien estructuradas y diseños que 
+        transmitan profesionalidad.
+      </p>
+
+      <p>
+        Mi objetivo es crecer como <span class="key">Frontend Developer</span> 
+        y formar parte de proyectos donde pueda aportar mis conocimientos, 
+        aprender de otros profesionales y seguir desarrollando mi potencial.
+      </p>
+    </div>
+
+  </div>
+
 </section>

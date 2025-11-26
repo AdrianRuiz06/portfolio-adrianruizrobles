@@ -426,3 +426,70 @@ html, body {
   .nav-links { display: none; }
   .hero-title { font-size: 2.3rem; }
 }
+
+/* =========================
+   SOBRE MÍ
+========================= */
+
+.about-section {
+  width: 80%;
+  margin: 80px auto;
+  padding: 40px;
+  background: #161616;
+  border-radius: 16px;
+  border: 1px solid #222;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+.about-title {
+  font-size: 2.4rem;
+  color: #a855f7;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* FOTO */
+.about-photo-container {
+  flex-shrink: 0;
+}
+
+.about-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #a855f7;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+}
+
+/* TEXTO */
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #ddd;
+  max-width: 650px;
+}
+
+.about-text .key {
+  color: #c084fc;
+  font-weight: 600;
+}
+
+/* Modo responsive */
+@media (max-width: 900px) {
+  .about-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+}

@@ -51,7 +51,17 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 2. Guardar y subir cambios
 
 Cada vez que hagas nuevas modificaciones:
+    git pull origin main --rebase
+    git push origin main
     git add .
     git commit -m "Descripción breve de los cambios"
     git push
 Y con eso, todo queda guardado en GitHub 🚀
+
+--- CONSTRUCCIÓN
+src/
+ └─ sections/
+      ├─ Hero.astro        ← Portada
+      ├─ About.astro       ← SOBRE MÍ 👈 AQUÍ
+      ├─ Projects.astro    ← Proyectos
+      └─ Skills.astro      ← Habilidades
